@@ -1,13 +1,15 @@
 package practica06;
 
 public class Maestro {
+	//Declarar variables privadas
 	private int NumEmpleado;
 	private String NombreDelEmpleado;
 	private String Departamento;
 	private Fecha FechaDeAlta;
 	private Hora HoraEntrada;
 	private Hora HoraSalida;
-
+	
+	//generar get y set de las variables
 	public int getNumEmpleado() {
 		return NumEmpleado;
 	}
@@ -61,7 +63,8 @@ public class Maestro {
 		this.NombreDelEmpleado = nombreDelEmpleado;
 		this.Departamento = departamento;
 	}
-
+	
+	//Generar el metodo toString
 	@Override
 	public String toString() {
 		return " No.EMPLEADO:" + NumEmpleado +"\n"+ " NOMBRE DEL EMPLEADO:"
